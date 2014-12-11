@@ -1,0 +1,28 @@
+In order to build the OnlineForest package, you need to install these libraries:
+
+* libconfig: C/C++ Configuration File Library
+  http://www.hyperrealm.com/libconfig/
+  Version used for this package: 1.3.2
+
+* GMM++: Generic C++ template library for sparse and dense matrices
+  http://home.gna.org/getfem/gmm_intro.html
+  Version used for this package: 3.1
+
+* ATLAS: Automatically Tuned Linear Algebra Software (ATLAS)
+  http://math-atlas.sourceforge.net/
+  Version used for this package: 3.6
+
+* LAPACK: Linear Algebra PACKage (LAPACK)
+  http://www.netlib.org/lapack/
+  Version used for this package: 3.1
+
+If you are on Ubuntu, you just need to install the libconfig manually by downloading 
+it from the its website. For other packages you could install them from ubuntu 
+repositories:
+
+sudo apt-get install liblapack-dev libatlas-base-dev libgmm-dev
+
+After installing the dependencies, just run the:
+make
+
+This should build the "Online-Forest" binary.
