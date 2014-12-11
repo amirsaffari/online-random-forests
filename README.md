@@ -56,9 +56,13 @@ one header line which contains the following information:
 \#Samples \#Features \#Classes \#FeatureMinIndex
 
 where
+
 \#Samples: number of samples
+
 \#Features: number of features
+
 \#Classes: number of classes
+
 \#FeatureMinIndex: the index of the first feature used
 
 You can find a few datasets in the data folder, check their header to see some examples.
