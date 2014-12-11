@@ -1,8 +1,6 @@
 Online Random Forests
 =====================
 
-Amir Saffari <amir@ymer.org>
-
 This is the original implementation of the Online Random Forest algorithm [1]. There is a more recent implementation of this algorithm at https://github.com/amirsaffari/online-multiclass-lpboost which was used in [2].
 
 Read the INSTALL file for build instructions.
