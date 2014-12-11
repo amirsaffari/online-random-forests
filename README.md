@@ -7,7 +7,6 @@ This is the original implementation of the Online Random Forest algorithm [1]. T
 
 Read the INSTALL file for build instructions.
 
-======
 Usage:
 ======
 Input arguments:
@@ -26,7 +25,6 @@ Input arguments:
 	Examples:
 	 ./Online-Forest -c conf/orf.conf --orf --t2
 
-============
 Config file:
 ============
 All the settings for the classifier are passed via the config file. You can find the
@@ -51,18 +49,17 @@ Output:
   * savePath = path to save the results (not implemented yet)
   * verbose = defines the verbosity level (0: silence)
 
-============
 Data format:
 ============
 The data formats used is very similar to the LIBSVM file formats. It only need to have
 one header line which contains the following information:
-#Samples #Features #Classes #FeatureMinIndex
+\#Samples \#Features \#Classes \#FeatureMinIndex
 
 where
-#Samples: number of samples
-#Features: number of features
-#Classes: number of classes
-#FeatureMinIndex: the index of the first feature used
+\#Samples: number of samples
+\#Features: number of features
+\#Classes: number of classes
+\#FeatureMinIndex: the index of the first feature used
 
 You can find a few datasets in the data folder, check their header to see some examples.
 Currently, there is only one limitation with the data files: the classes should be
