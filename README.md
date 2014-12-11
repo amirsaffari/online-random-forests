@@ -10,6 +10,7 @@ Read the INSTALL file for build instructions.
 Usage:
 ======
 Input arguments:
+
 	 -h | --help : 	 will display this message.
 	 -c : 		 path to the config file.
 
