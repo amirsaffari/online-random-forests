@@ -1,6 +1,7 @@
 #ifndef UTILITIES_H_
 #define UTILITIES_H_
 
+#include <unistd.h>
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
