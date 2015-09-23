@@ -18,7 +18,7 @@ LINKPATH = -L/usr/local/lib
 
 # OPTIMIZED
 CFLAGS = -c -O3 -Wall -march=native -mtune=native -DNDEBUG
-LDFLAGS = -lconfig++ -latlas -llapack
+LDFLAGS = -lconfig++ -latlas -llapack -lblas
 
 # Source directory and files
 SOURCEDIR = src
@@ -32,7 +32,7 @@ BUILDTARGET = Online-Forest
 # Build
 all: $(BUILDTARGET)
 $(BUILDTARGET): $(OBJECTS) $(SOURCES) $(HEADERS)
-	$(CC) $(LINKPATH) $(LDFLAGS) $(OBJECTS) -o $@
+	$(CC) $(LINKPATH) $(OBJECTS) $(LDFLAGS) -o $@
 .cpp.o:
 	$(CC) $(CFLAGS) $(INCLUDEPATH) $< -o $@
 
